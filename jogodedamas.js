@@ -87,6 +87,10 @@ function dragstart() {
 	this.classList.add('achado')
 }
 
+function dragleave() {
+	this.style.backgroundColor = 'black'
+}
+
 
 // Organizando as peças em listas diferentes
 p_Vermelhas = []
@@ -131,9 +135,6 @@ celulapreta.addEventListener('drop', drop)
 
 
 
-function dragleave() {
-	this.style.backgroundColor = 'black'
-}
 
 function drop(){
 	p_ini = parseInt(document.querySelector('.achado').parentNode.parentNode.id)
@@ -199,7 +200,3 @@ function dragenter(t) {
 		this.style.backgroundColor = '#FF0000'
 	}
 }
-
-
-
-
