@@ -109,6 +109,7 @@ while (aux < 24) {
 	aux += 1
 }
 
+// Dando nomes as peças
 function orga() {
 	peca.forEach(peca => {
 		peca.setAttribute('name', '')
